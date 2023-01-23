@@ -16,7 +16,7 @@ galleryItems.forEach(galleryItem => {
 
   const image = document.createElement("a");
   image.classList.add("gallery__link");
-  image.setAttribute("href", galleryItem.original);
+  image.href = galleryItem.original;
 
   imgContainer.appendChild(image);
   image.appendChild(imgMiniature);
